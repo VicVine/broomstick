@@ -1,0 +1,88 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FAF3E1;
+}
+
+button{
+    border: none;
+    background-color: #222222;
+    color:#fff;
+    padding: 8px 25px;
+    border-radius: 7px;
+    transition: 250ms;
+    border: 1px solid #222222;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: transparent;
+    border: 1px solid #222222;
+    color: #222222;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 4px #ccc;
+}
+
+a{
+    text-decoration: none;
+    color: #222222;
+}
+
+a:hover{
+    color: #E8891D;
+}
+
+header .logo{
+    width: 270px;
+    height: 80px;
+    margin: 0 0 0 30px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 460px;
+}
+
+.auth .ico{
+    width: 24px;
+    height: 24px;
+    margin: 12px 7px;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.auth .ico:hover{
+    transform: scale(1.2);
+}
+
+.auth .socials{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.auth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 50px 0px 0px;
+}
