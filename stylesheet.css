@@ -6,6 +6,26 @@ body{
     background-color: #FAF3E1;
 }
 
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+h4{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
 button{
     border: none;
     background-color: #222222;
@@ -23,6 +43,24 @@ button:hover{
     color: #222222;
 }
 
+.button-secondary{
+    border: none;
+    background-color: #E8891D;
+    color:#ffffff;
+    padding: 8px 25px;
+    border-radius: 7px;
+    transition: 250ms;
+    border: 1px solid #E8891D;
+    cursor: pointer;
+
+}
+
+.button-secondary:hover{
+    background-color: transparent;
+    border: 1px solid #E8891D;
+    color: #E8891D;
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -30,6 +68,7 @@ header{
     padding: 10px 20px;
     background-color: #fff;
     box-shadow: 0 0 4px #ccc;
+    z-index: 100;
 }
 
 a{
@@ -41,9 +80,14 @@ a:hover{
     color: #E8891D;
 }
 
+.accentuated{
+    color: #E8891D;
+    font-style: italic;
+}
+
 header .logo{
-    width: 270px;
-    height: 80px;
+    width: 280px;
+    height: 90px;
     margin: 0 0 0 30px;
 }
 
@@ -62,8 +106,8 @@ nav{
 }
 
 .auth .ico{
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     margin: 12px 7px;
     cursor: pointer;
     transition: 250ms;
@@ -84,5 +128,142 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 20px 50px 0px 0px;
+    margin: 10px 50px 0px 0px;
+}
+
+.square-1{
+    transform: rotate(33deg);
+    padding: 25px;
+    box-shadow: 4px 2px 4px #00000022;
+    border-radius: 35px;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 50px;
+    bottom: 100px;
+    z-index: -1;
+    background-color: #FFFFFF;
+}
+
+.square-1__inner{
+    transform: rotate(-33deg);
+    position: absolute;
+    top: 120px;
+    left: 20px;
+}
+
+.square-2{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    transform: rotate(155deg);
+    right: 175px;
+    bottom: 325px;
+    z-index: -2;
+    border-radius: 32px;
+    background: rgb(242,55,239);
+    background: linear-gradient(0deg, rgba(242,55,239,1) 0%, rgba(252,82,82,1) 100%);
+    animation: square-2-rotate 120s infinite linear;
+}
+
+.square-3{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    position: absolute;
+    transform: rotate(164deg);
+    right: 550px;
+    bottom: 175px;
+    z-index: -2;
+    background: rgb(255,224,49);
+    background: linear-gradient(0deg, rgba(255,224,49,1) 0%, rgba(252,82,82,1) 100%);
+    animation: square-3-rotate 60s infinite linear;
+}
+
+.square-4{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    position: absolute;
+    transform: rotate(100deg);
+    right: 350px;
+    bottom: 50px;
+    z-index: -2;
+    background: rgb(229,242,48);
+    background: linear-gradient(0deg, rgba(229,242,48,1) 0%, rgba(84,219,99,1) 100%);
+    animation: square-4-rotate 60s infinite linear;
+}
+
+.square-5{
+    width: 175px;
+    height: 175px;
+    border-radius: 20px;
+    position: absolute;
+    transform: rotate(142deg);
+    right: 45px;
+    bottom: 50px;
+    z-index: -2;
+    background: rgb(0,255,237);
+    background: linear-gradient(0deg, rgba(0,255,237,1) 0%, rgba(157,0,198,1) 100%);
+    animation: square-5-rotate 90s infinite linear;
+}
+
+@keyframes square-rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes square-inner-rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes square-2-rotate{
+    0%{
+        transform: rotate(155deg);
+    }
+
+    100%{
+        transform: rotate(515deg);
+    }
+}
+
+@keyframes square-3-rotate{
+    0%{
+        transform: rotate(164deg);
+    }
+
+    100%{
+        transform: rotate(524deg);
+    }
+}
+
+@keyframes square-4-rotate{
+    0%{
+        transform: rotate(100deg);
+    }
+
+    100%{
+        transform: rotate(540deg);
+    }
+}
+
+@keyframes square-5-rotate{
+    0%{
+        transform: rotate(142deg);
+    }
+
+    100%{
+        transform: rotate(500deg);
+    }
 }

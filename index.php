@@ -11,9 +11,9 @@
         <a href="index.php"><img src="img/logo-b.svg" alt="logo" class="logo"></a>
         <nav>
             <ul>
-                <li><a href="index.php">Функционал</a></li>
-                <li><a href="about.php">Отзывы</a></li>
-                <li><a href="contacts.php">О нас</a></li>
+                <li><a href="functional.php">Функционал</a></li>
+                <li><a href="testimonials.php">Отзывы</a></li>
+                <li><a href="aboutus.php">О нас</a></li>
             </ul>
         </nav>
         <div class="auth">
@@ -26,6 +26,20 @@
         </div>
     </header>
 <body>
-    
+    <div>
+
+        <div class="square-1">
+            <div class="square-1__inner">
+                <h1>Информационная система <span class="accentuated">«делегит»</span></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat ante id porta ullamcorper. Nam feugiat iaculis placerat. Aenean volutpat eu mauris sit amet efficitur.</p>
+                <button href="registration.php" class="button-secondary">Регистрация</button>
+            </div>
+        </div>
+        <div class="square-2"></div>
+        <div class="square-3"></div>
+        <div class="square-4"></div>
+        <div class="square-5"></div>
+
+    </div>
 </body>
 </html>
