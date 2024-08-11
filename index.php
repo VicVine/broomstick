@@ -38,7 +38,7 @@
         <div class="square-4"></div>
         <div class="square-5"></div>
     </div>
-    <div class="section">
+    <div class="section tasks">
         <h2>Наша информационная система возьмет <span class="accentuated">на себя</span> следующие задачи</h2>
         <div class="row-tasks">
                 <div class="task-card">
@@ -75,8 +75,18 @@
                 </div>
         </div>
     </div>
-    <div>
-        
-    </div>
+    <!-- <div class="section">
+        <h2>Вам <span class="accentuated">подходит</span> наша информационная система если вы:</h2>
+        <div class="problem-block">
+            <div class="problem-dot"></div>
+
+            </div>
+            <div class="problem-dot"></div>
+                
+            </div>
+            <div class="problem-dot"></div>
+                
+            </div>
+    </div> -->
 </body>
 </html>
